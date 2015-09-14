@@ -6,7 +6,7 @@ COMMING SOON PAGE
     * Set your date here  (YEAR, MONTH (0 for January/11 for December), DAY, HOUR, MINUTE, SECOND)
     * according to the GMT+0 Timezone
     **/
-    var launch = new Date('2015-11-23');
+    var launch = new Date('2016-08-21');
     /**
     * The script
     **/
@@ -24,7 +24,7 @@ COMMING SOON PAGE
             hours.html('<h1>0</h1><p>Hour</p>');
             minutes.html('<h1>0</h1><p>Minute</p>');
             seconds.html('<h1>0</h1><p>Second</p>');
-            message.html('解脫!!!!!!!!');
+            message.html('退伍囉!!!');
         }
         else{
             var s = -now.getTimezoneOffset()*60 + (launch.getTime() - now.getTime())/1000;
@@ -43,7 +43,7 @@ COMMING SOON PAGE
             seconds.html('<h1>'+s+'</h1><p>Second'+(s>1?'s':''),'</p>');
             setTimeout(setDate, 1000);
 
-            message.html('就讓我走了吧(菸)');
+            message.html('剩餘崩潰日數');
         }
     }
 })(jQuery);
